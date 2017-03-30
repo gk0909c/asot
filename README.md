@@ -43,3 +43,34 @@ RSpec.configure do |config|
   end
 end
 ```
+
+## spec sample
+```ruby
+require 'spec_helper'
+
+describe 'Account', type: feature, js: true do
+  let(:sfdc) { RSpec.configuration.sfdc }
+  let(:test_obj) { 'Account' }
+
+  it 'is created via new page' do
+    login_to_production('your username', 'your password')
+
+    select_application 'Sales'
+    select_tab 'Accounts'
+    expect(page).to have_content('Recent Accounts')
+
+    click_button 'New'
+    expect(page).to have_content('New Account')
+
+    fill_in 'Account Name', with: 'Asot Company'
+    standard_save
+    expect(page).to have_content('Account Detail')
+
+    # asot can clean data on sfdc after spec suite.
+    # you can add it with object reference name and record id.
+    sfdc.add_clean_data(test_obj, current_url_id)
+  end
+end
+
+
+```
