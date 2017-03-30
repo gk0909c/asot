@@ -2,9 +2,9 @@ module Asot
   module Rest
     # mutual tranformer about salesforce rest api data
     module DataTransformer
-      module_function
-
       Target = Struct.new(:obj, :id)
+
+      module_function
 
       def transform_delete_batch(data)
         data.inject([]) do |batches, target|
