@@ -1,5 +1,8 @@
-require "asot/version"
+require 'asot/version'
+require 'asot/rest/connector'
 
 module Asot
-  # Your code goes here...
+  def self.connect(config)
+    Connector.new(config)
+  end
 end
