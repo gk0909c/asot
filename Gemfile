@@ -4,4 +4,5 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'pry', group: :development
+gem 'rubocop', require: false, group: :development
 gem 'simplecov', require: false, group: :test
