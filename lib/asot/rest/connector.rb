@@ -1,3 +1,4 @@
+require 'json'
 require 'savon'
 require 'rest-client'
 require 'asot/rest/data_transformer'

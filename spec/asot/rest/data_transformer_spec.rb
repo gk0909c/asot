@@ -1,5 +1,4 @@
-require 'asot/rest/connector'
-require 'asot/rest/data_transformer'
+require 'spec_helper'
 
 RSpec.describe Asot::Rest::DataTransformer do
   include Asot::Rest::DataTransformer

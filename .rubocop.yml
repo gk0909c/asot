@@ -18,5 +18,8 @@ Style/IndentationConsistency:
 Style/BlockLength:
   Exclude:
     - 'spec/**/*.rb'
+Style/SingleLineMethods:
+  Exclude:
+    - 'spec/**/*.rb'
 AsciiComments:
   Enabled: false
