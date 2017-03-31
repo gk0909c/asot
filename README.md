@@ -1,4 +1,6 @@
 # Asot
+[![Build Status](https://travis-ci.org/gk0909c/asot.svg?branch=master)](https://travis-ci.org/gk0909c/asot)
+
 help to Automate Salesforce Operation Test.
 
 ## require
