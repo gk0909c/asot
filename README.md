@@ -1,5 +1,6 @@
 # Asot
 [![Build Status](https://travis-ci.org/gk0909c/asot.svg?branch=master)](https://travis-ci.org/gk0909c/asot)
+[![Coverage Status](https://coveralls.io/repos/github/gk0909c/asot/badge.svg?branch=master)](https://coveralls.io/github/gk0909c/asot?branch=master)
 
 help to Automate Salesforce Operation Test.
 
