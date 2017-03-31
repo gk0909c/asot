@@ -10,12 +10,12 @@ AllCops:
     - 'vendor/bundle/**/*'
     - 'spec/spec_helper.rb'
     - 'spec/rails_helper.rb'
-Style/LineLength:
+Metrics/LineLength:
   Max: 120 
 Style/IndentationConsistency:
   Enabled: true
   EnforcedStyle: rails
-Style/BlockLength:
+Metrics/BlockLength:
   Exclude:
     - 'spec/**/*.rb'
 Style/SingleLineMethods:
