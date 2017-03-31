@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Asot::Rest::Connector do
+RSpec.describe Asot::Rest::Connector do
   # mock savon
   let(:client) { spy('Savon Client') }
   let(:login_response) { double('Savon Call Response') }
