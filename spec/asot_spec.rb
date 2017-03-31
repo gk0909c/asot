@@ -5,7 +5,13 @@ describe Asot do
     expect(Asot::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  describe 'self.connect' do
+    subject { Asot::Rest::Connector }
+    before { allow(subject).to receive(:new).with(anything) }
+
+    it 'call Asot::Rest::Connector' do
+      Asot.connect({})
+      expect(subject).to have_received(:new).with(anything).once
+    end
   end
 end
