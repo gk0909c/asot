@@ -41,9 +41,9 @@ module Asot
 
       def login(env, username, password)
         visit "https://#{env}.salesforce.com/?locale=jp"
-        page.fill_in 'ユーザ名', with: username
-        page.fill_in 'パスワード', with: password
-        page.click_button 'ログイン'
+        fill_in 'ユーザ名', with: username
+        fill_in 'パスワード', with: password
+        click_button 'ログイン'
       end
   end
 end

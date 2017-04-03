@@ -26,5 +26,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.5'
   spec.add_development_dependency 'capybara', '~> 2.13'
+  spec.add_development_dependency 'poltergeist', '~> 1.14'
   spec.add_development_dependency 'selenium-webdriver', '~> 3.3'
 end
